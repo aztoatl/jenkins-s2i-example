@@ -16,4 +16,4 @@ USER 1001
 # To use swarm client, specify "/var/lib/jenkins/run-swarm-client" as Command
 ENTRYPOINT ["/var/lib/jenkins/run-jnlp-client"]
 
-RUN echo "*************AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA***********************"
+RUN echo "*************AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA***********************"
