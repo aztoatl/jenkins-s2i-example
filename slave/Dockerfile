@@ -1,7 +1,7 @@
 # The FROM will be replaced when building in OpenShift
-FROM centos/7
+FROM centos:latest
 
-MAINTAINER Siamak Sadeghianfar <ssadeghi@redhat.com>
+MAINTAINER Damian Zermeno <damian@miluchita.com.mx>
 
 # Install headless Java
 USER root
