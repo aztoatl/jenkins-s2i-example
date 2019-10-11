@@ -21,7 +21,8 @@ RUN yum clean all && \
     chmod -R g+w /var/lib/jenkins
 
 # Copy the entrypoint
-COPY configuration/* /var/lib/jenkins/
+WORKDIR configuration/
+COPY . /var/lib/jenkins/
 USER 1001
 
 # Run the JNLP client by default
