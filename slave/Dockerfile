@@ -5,7 +5,7 @@ MAINTAINER Damian Zermeno <damian@miluchita.com.mx>
 
 # Install headless Java
 USER root
-RUN apt-get update && apt-get install -y nss_wrapper openjdk-8-jre-headless nss-wrapper gettext tar git 
+RUN apt-get update && apt-get install -y nss-wrapper openjdk-8-jre-headless gettext tar git 
 RUN mkdir -p /var/lib/jenkins && chown -R 1001:0 /var/lib/jenkins && chmod -R g+w /var/lib/jenkins
 
 # Copy the entrypoint
