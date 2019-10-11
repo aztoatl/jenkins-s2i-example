@@ -5,11 +5,8 @@ MAINTAINER Damian Zermeno <damian@miluchita.com.mx>
 
 # Install headless Java
 USER root
-RUN  apt-get install -y apt-transport-https \
-    nss_wrapper java-1.8.0-openjdk-headless java-1.8.0-openjdk-devel nss_wrapper gettext tar git && \
-    mkdir -p /var/lib/jenkins && \
-    chown -R 1001:0 /var/lib/jenkins && \
-    chmod -R g+w /var/lib/jenkins
+RUN  apt-get install -y nss_wrapper java-1.8.0-openjdk-headless java-1.8.0-openjdk-devel nss_wrapper gettext tar git 
+RUN mkdir -p /var/lib/jenkins && chown -R 1001:0 /var/lib/jenkins && chmod -R g+w /var/lib/jenkins
 
 # Copy the entrypoint
 WORKDIR configuration/
